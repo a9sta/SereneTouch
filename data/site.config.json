@@ -1,0 +1,31 @@
+{
+  "brand": {
+    "ko": "세린터치",
+    "en": "SereneTouch",
+    "slogan": "초인종 한 번, 조용히 들어갑니다"
+  },
+  "siteUrl": "https://serenetouch-kr.netlify.app",
+  "locale": "ko_KR",
+  "tel": "050-8202-4752",
+  "telRaw": "05082024752",
+  "telLabel": "예약 문의",
+  "telNote": "안심번호",
+  "hours": "24시간 연중무휴",
+  "pay": "후불제",
+  "arrive": "접수 뒤 25~45분",
+  "naverVerification": "",
+  "rssTitle": "세린터치 방문 안내 글",
+  "business": {
+    "name": "세린터치",
+    "owner": "",
+    "regNo": "",
+    "address": "",
+    "privacyOfficer": "",
+    "email": "",
+    "note": "사업자 정보는 확정되는 대로 이 항목만 채우면 푸터·스키마에 함께 반영된다. 비워 두면 해당 줄은 출력하지 않는다."
+  },
+  "coverage": {
+    "sido": ["대구", "광주", "대전", "울산", "경북", "경남"]
+  },
+  "indexNowKey": "1e40ff14d8ef22e31e5b4b5d52559b31"
+}

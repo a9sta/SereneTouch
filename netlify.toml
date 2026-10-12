@@ -1,0 +1,26 @@
+# 깃 연동 빌드에서만 읽힌다. zip 을 직접 올리는 배포에서는 dist/_headers 와
+# dist/_redirects 가 같은 일을 한다(빌드가 그 두 파일을 함께 떨어뜨린다).
+[build]
+  command = "node src/build.mjs"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
